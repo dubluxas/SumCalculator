@@ -4,6 +4,10 @@ using SumCalculator.Utilities;
 
 namespace SumCalculator.Repositories;
 
+/// <summary>
+/// Provides CRUD (Create, Read, Update, Delete) operations for entities of type <see cref="CalculatorRecord"/>.
+/// Uses <see cref="IBaseRepository{T}"/> to complete implementation.
+/// </summary>
 public class CalculatorRepository : ICalculatorRepository
 {
     private readonly IBaseRepository<CalculatorRecord>? _baseRepository;

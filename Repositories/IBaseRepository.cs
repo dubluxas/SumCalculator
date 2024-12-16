@@ -2,6 +2,10 @@ using SumCalculator.Models;
 
 namespace SumCalculator.Repositories;
 
+/// <summary>
+/// Defines generic CRUD methods for entities of <typeparamref name="T"/>
+/// </summary>
+/// <typeparam name="T">The type of entity interface operates on.</typeparam>
 public interface IBaseRepository <T> where T : class
 {
     public IQueryable<T> GetAllQueryable();

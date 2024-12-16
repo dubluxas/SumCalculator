@@ -2,7 +2,9 @@ using SumCalculator.Models;
 using SumCalculator.Utilities;
 
 namespace SumCalculator.Repositories;
-
+/// <summary>
+/// Defines CRUD methods for entity of type <see cref="CalculatorRecord"/>
+/// </summary>
 public interface ICalculatorRepository
 {
         public Task<Repositoryresponse<IList<CalculatorRecord>>> GetAllRecordsAsync(CancellationToken cancellationToken = default);
