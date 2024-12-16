@@ -1,0 +1,33 @@
+@using SumCalculator.Models;
+@using SumCalculator.Components;
+@using FluentValidation;
+@inherits SumRecordFormBase;
+@using Morris.Blazor.Validation;
+
+@if (CalculatorRecord is not null)
+{
+    <EditForm Model="@CalculatorRecord" OnValidSubmit="HandleValidSubmitAsync">
+            <Validate/>
+            <div class="form-group">
+                <input 
+                    type="text" 
+                    class="form-control" 
+                    id="value1" 
+                    placeholder = "Enter First Value."
+                    @bind="@CalculatorRecord.Value1"/>
+                <ValidationMessage For="() => CalculatorRecord.Value1" />
+            </div>
+            <div class="form-group">
+                <input 
+                    type="text" 
+                    class="form-control" 
+                    id="value2" 
+                    placeholder = "Enter Second Value."
+                    @bind="@CalculatorRecord.Value2" />
+                <ValidationMessage For="@(() => CalculatorRecord.Value2)" />
+            </div>
+            <ValidationMessage For="@(() => CalculatorRecord.Sum)" />
+            <button type="submit" class="btn btn-outline-primary btn-sm">Submit</button>
+    </EditForm>
+}
+

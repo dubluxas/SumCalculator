@@ -1,0 +1,25 @@
+﻿@page "/"
+
+@using SumCalculator.Components;
+@inherits IndexBase;
+
+ <BootstrapToastComponent 
+    @ref="ToastComponent"
+    Type = "@(HasError ? "bg-danger" : "bg-success")"
+    Title="@(HasError ? "Operation Failed" : "Operation Successful")"
+    Message="@(ServerErrormessage)" 
+/>
+
+<div class="container">
+    <div class="top">
+        <SumRecordForm OnRecordSubmitted = "RecordSubmitted"/>
+    </div>
+    <div class="bottom">
+        <CalculatorHistory @ref = "CalculatorHistory"/>  
+    </div>
+</div>
+
+
+
+
+

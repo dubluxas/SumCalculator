@@ -1,0 +1,20 @@
+@inherits CalculatorHistoryBase;
+
+@if(CalculatorRecords.Count == 0)
+{
+    <center><p class="p-3">Unable to fetch records...</p></center>
+}else
+{
+    <table class="table">
+        <thead>
+        <tr><th>id</th><th>Value 1</th><th>Value 2</th><th>Sum</th><th>Date</th></tr>
+        </thead>
+        <tbody>
+            @foreach (var item in CalculatorRecords)
+            {
+                <tr><td>@item.Id</td><td>@item.Value1</td><td>@item.Value2</td><td>@item.Sum</td><td>@item.DateTime</td></tr>
+            }
+        </tbody>
+    </table>
+}
+

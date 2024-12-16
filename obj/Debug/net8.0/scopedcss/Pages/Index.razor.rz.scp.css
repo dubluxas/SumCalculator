@@ -1,0 +1,34 @@
+html[b-qylp48zxgh], body[b-qylp48zxgh] {
+    height: 100%;
+    margin: 0;
+}
+
+body[b-qylp48zxgh] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container[b-qylp48zxgh] {
+    width: 600px; /* Set width for the container */
+    height: 600px; /* Set total height for the container */
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+}
+
+.container > .top[b-qylp48zxgh] {
+    flex: 0; /* Expand to take remaining space */
+    margin: 5px;
+    background-color: white;
+    border: 1px solid #ddd;
+}
+
+.container > .bottom[b-qylp48zxgh] {
+    margin: 5px;
+    height: 100%; /* Fixed height for bottom */
+    background-color: white;
+    border: 1px solid #ddd;
+    overflow-y: auto; /* Make bottom scrollable */
+}

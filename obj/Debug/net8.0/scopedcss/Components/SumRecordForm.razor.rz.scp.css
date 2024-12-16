@@ -1,0 +1,10 @@
+button[b-vz93wetq70]
+{
+    width: 100%;
+    margin: 5px;
+    width: calc(100% - 10px);
+}
+input[b-vz93wetq70] {
+    margin: 5px;
+    width: calc(100% - 10px);
+}
