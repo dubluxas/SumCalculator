@@ -145,3 +145,4 @@
 /Users/dublux/Projects/SumCalculator/obj/Debug/net8.0/ref/SumCalculator.dll
 /Users/dublux/Projects/SumCalculator/obj/Debug/net8.0/scopedcss/Pages/Index.razor.rz.scp.css
 /Users/dublux/Projects/SumCalculator/obj/Debug/net8.0/scopedcss/Components/SumRecordForm.razor.rz.scp.css
+/Users/dublux/Projects/SumCalculator/obj/Debug/net8.0/SumCalculator.sourcelink.json
